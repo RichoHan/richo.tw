@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Richo</title>
+	<meta name="description" content="Richo's personal website.">
+	<meta name="author" content="Rich Han">
+
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Semantic-UI-1.7.3/dist/semantic.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+	<script src="{{ url_for('static', filename='Semantic-UI-1.7.3/dist/semantic.js') }}"></script>
+
+</head>
+
+<body>
+	
+	<div class="ui padded grid">
+
+		<div class="teal two column row menu">
+			<div class="white column">
+				<h2 class="ui header">Richo Han</h2>
+				<p>Computer Science</p>
+			</div>
+			<div class="teal column">
+				<div class="ui text menu">
+					<a class="active item home_btn">
+						<i class="home icon"></i> Home
+					</a>
+					<a class="item resume_btn">
+						<i class="user icon"></i> Resume
+					</a>
+					<a class="item contact_btn">
+						<i class="mail icon"></i> Contact
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="black row">
+			<div class="column content">
+				<div class="homepage">
+					<h2 class="ui inverted header">Homepage</h2>
+					<img class="ui medium circular image" src="{{ url_for('static', filename='images/face.jpg') }}">
+				</div>
+				<div class="resumepage">
+					<h2 class="ui inverted header">Resume</h2>
+				</div>
+				<div class="contactpage">
+					<h2 class="ui inverted header">Contact</h2>
+				</div>
+			</div>
+		</div>
+
+		<div class="red row content">
+			<div class="column">
+				<div class="infomation">
+					<p>email: richo2192000@gmail.com</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="{{ url_for('static', filename='js/index.js') }}"></script>
+
+</body>
+</html>
