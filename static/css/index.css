@@ -1,6 +1,32 @@
-.column{
-	/*background-color: red;*/
+.wrap{
+	min-height: 95%;
 }
 
-.menu{
+.name{
+	color: #2F8E70;
+	text-align: center;
+}
+
+.menu a{
+	font-size: 30;
+}
+
+.homepage{
+	/*vertical-align: middle;*/
+}
+
+.contact .information{
+	text-align: center;
+}
+
+.contact{
+	background-color: #332F3E;
+	position: relative;
+	height: 6%;
+	clear: both;
+}
+
+html, body{
+	background-color: #80C8B5;
+	height: 100%;
 }

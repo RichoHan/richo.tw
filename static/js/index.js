@@ -1,3 +1,10 @@
+$('.ui.sticky')
+	.sticky({
+		// bottomOffset : 0
+		// context: '#example1'
+	})
+;
+
 $('.content .resumepage').hide();
 $('.content .contactpage').hide();
 

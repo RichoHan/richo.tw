@@ -16,47 +16,64 @@
 
 <body>
 	
-	<div class="ui padded grid">
+	<div class="wrap">
 
-		<div class="teal two column row menu">
-			<div class="white column">
-				<h2 class="ui header">Richo Han</h2>
-				<p>Computer Science</p>
+		<div class="ui padded grid container">
+
+			<div class="two column row topbar">
+				<div class="column topbar_name">
+					<div class="name">
+						<h2 class="ui header">Richo Han</h2>
+						<p>Computer Science</p>
+					</div>
+				</div>
+				<div class="column">
+					<div class="ui large text menu">
+						<a class="active item home_btn">
+							<i class="home icon"></i> Home
+						</a>
+						<a class="item resume_btn">
+							<i class="user icon"></i> Resume
+						</a>
+						<a class="item contact_btn">
+							<i class="mail icon"></i> Contact
+						</a>
+					</div>
+				</div>
 			</div>
-			<div class="teal column">
-				<div class="ui text menu">
-					<a class="active item home_btn">
-						<i class="home icon"></i> Home
-					</a>
-					<a class="item resume_btn">
-						<i class="user icon"></i> Resume
-					</a>
-					<a class="item contact_btn">
-						<i class="mail icon"></i> Contact
-					</a>
+
+			<div class="row">
+				<div class="column content">
+					<div class="homepage">
+						<div class="ui middle aligned padded grid">
+							<div class="two column row">
+								<div class="column">
+									<img class="ui medium centered circular image" src="{{ url_for('static', filename='images/face.jpg') }}">
+								</div>
+								<div class="column">
+									<h2>Also known as Richo</h2>
+									<p>I'm currently a graduate student in <a href="http://csclab.tw" target="a">CSCLab</a>(Collaborative & Social Computing Lab), CS, NTHU.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="resumepage">
+						<h2 class="ui header">Resume</h2>
+					</div>
+					<div class="contactpage">
+						<h2 class="ui header">Contact</h2>
+					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<div class="black row">
-			<div class="column content">
-				<div class="homepage">
-					<h2 class="ui inverted header">Homepage</h2>
-					<img class="ui medium circular image" src="{{ url_for('static', filename='images/face.jpg') }}">
-				</div>
-				<div class="resumepage">
-					<h2 class="ui inverted header">Resume</h2>
-				</div>
-				<div class="contactpage">
-					<h2 class="ui inverted header">Contact</h2>
-				</div>
-			</div>
-		</div>
 
-		<div class="red row content">
+	<div class="ui padded grid contact">
+		<div class="row">
 			<div class="column">
-				<div class="infomation">
-					<p>email: richo2192000@gmail.com</p>
+				<div class="information">
+					<h4 class="ui inverted header">email: richo2192000@gmail.com</h4>
 				</div>
 			</div>
 		</div>
