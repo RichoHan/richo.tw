@@ -1,85 +1,112 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="utf-8">
-	<title>Richo</title>
-	<meta name="description" content="Richo's personal website.">
-	<meta name="author" content="Rich Han">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Semantic-UI-1.7.3/semantic.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+	<link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}"> 
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/vendor/fluidbox.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
-	<script src="{{ url_for('static', filename='Semantic-UI-1.7.3/semantic.js') }}"></script>
+	<title>Gumba Template</title>
 
 </head>
-
 <body>
-	
-	<div class="wrap">
 
-		<div class="ui padded grid container">
 
-			<div class="two column row topbar">
-				<div class="column topbar_name">
-					<div class="name">
-						<h2 class="ui header">Richo Han</h2>
-						<p>Computer Science</p>
-					</div>
-				</div>
-				<div class="column">
-					<div class="ui large text menu">
-						<a class="active item home_btn">
-							<i class="home icon"></i> Home
-						</a>
-						<a class="item resume_btn">
-							<i class="user icon"></i> Resume
-						</a>
-						<a class="item contact_btn">
-							<i class="mail icon"></i> Contact
-						</a>
-					</div>
-				</div>
-			</div>
+	<header>
 
-			<div class="row">
-				<div class="column content">
-					<div class="homepage">
-						<div class="ui middle aligned padded grid">
-							<div class="two column row">
-								<div class="column">
-									<img class="ui medium centered circular image" src="{{ url_for('static', filename='images/face.jpg') }}">
-								</div>
-								<div class="column">
-									<h2>Also known as Richo</h2>
-									<p>I'm currently a graduate student in <a href="http://csclab.tw" target="a">CSCLab</a>(Collaborative & Social Computing Lab), CS, NTHU.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="resumepage">
-						<h2 class="ui header">Resume</h2>
-					</div>
-					<div class="contactpage">
-						<h2 class="ui header">Contact</h2>
-					</div>
-				</div>
-			</div>
+		<div id="logo-container">
+			<div id="logo"><a href="/">Gumba</a></div>
+			<div id="subtitle">A design agency from Amsterdam</div>
 		</div>
+<!-- 		<nav>
+			<ul>
+				<li><a href="#">Link 1</a></li>
+				<li><a href="#">Link 2</a></li>
+				<li><a href="#">Link 3</a></li> 
+				<li><a href="mailto:your@address.com" class="bordered">Contact</a></li>
+			</ul>
+		</nav> -->
+
+	</header>
+
+	<div id="content">
+
+		<section class="intro">
+			<h1>Hello, <span class="nl"></span>we are here to help you.</h1>
+			<p>
+				Gumba is a simple single-page website template. This is the place where you would normally introduce yourself. You can easily change the template to fit your needs by changing the text, photos and styles.
+			</p>
+		</section>
+
+		<section class="row">
+			<div class="col-full">
+				<h2>Example title</h2>
+				<p>
+					Gumba is a fictional agency from Amsterdam, The Netherlands. This is the place where you would normally introduce yourself. You can easily change the template to fit your needs by adding text or changing the colors and styles.
+				</p>
+			</div>
+		</section>
+
+		<section class="row">
+			<div class="photo-grid">
+				<a href="img/example-photo-b.jpg" rel="lightbox" class="col-2"><img src="{{ url_for('static', filename='img/example-photo-b.jpg') }}" alt="Example photo"></a>
+				<a href="img/example-photo-c.jpg" rel="lightbox" class="col-2"><img src="{{ url_for('static', filename='img/example-photo-c.jpg') }}" alt="Example photo"></a>
+				<a href="img/example-photo-a.jpg" rel="lightbox" class="col-1"><img src="{{ url_for('static', filename='img/example-photo-a.jpg') }}" alt="Example photo"></a>
+			</div>
+		</section>
+
+
+		<section class="row">
+			<div class="col">
+				<h2>Contact</h2>
+				<p>
+					Want to work with us? Just send us an <a href="mailto:#">email</a>.
+				</p>
+			</div>
+			<div class="col">
+				<h2>Follow us</h2>
+				<p>
+					We are on <a href="http://twitter.com/rickwaalders">Twitter</a>, <a href="http://dribbble.com/rickwaalders">Dribbble</a> and <a href="http://instagram.com/rickwaalders">Instagram</a>.
+				</p>
+			</div>
+		</section>
+
+
+		<section class="row">
+			<div class="col-full">
+				<p>
+					© 2014 - This is a free website template by <a href="http://www.pixelsbyrick.com">Rick Waalders</a>
+				</p>
+			</div>
+		</section>
+ 
 	</div>
 
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>
+	if (!window.jQuery) 
+	{
+	    document.write('<script src="js/vendor/jquery.1.11.min.js"><\/script>');
+	}
+	</script>
 
-	<div class="ui padded grid contact">
-		<div class="row">
-			<div class="column">
-				<div class="information">
-					<h4 class="ui inverted header">email: richo2192000@gmail.com</h4>
-				</div>
-			</div>
-		</div>
-	</div>
+	<script src="{{ url_for('static', filename='js/vendor/jquery.fluidbox.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
-	<script src="{{ url_for('static', filename='js/index.js') }}"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'YOUR_GOOGLE_ANALYTICS_ID', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
 
 </body>
 </html>
+
