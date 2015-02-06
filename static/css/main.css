@@ -541,16 +541,16 @@ header nav ul li a.bordered {
   font-size: 1.2em;
   line-height: 1.6em;
 }
-#content section.row .col {
+/*#content section.row .col {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%;
   padding-top: 1em;
   padding-bottom: 3em;
-}
+}*/
 
-#content section.row .col-full {
+#content section.row .col, #content section.row .col-full {
   float: left;
   display: block;
   margin-right: 2.35765%;
