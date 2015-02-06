@@ -397,7 +397,7 @@ header a {
   border: none;
 }
 header a:hover {
-  color: #d11c1c;
+  color: #8CEA00;
   border-color: #d11c1c;
 }
 header a:active, header a:focus {
@@ -541,7 +541,16 @@ header nav ul li a.bordered {
   font-size: 1.2em;
   line-height: 1.6em;
 }
-#content section.row .col, #content section.row .col-full {
+#content section.row .col {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  padding-top: 1em;
+  padding-bottom: 3em;
+}
+
+#content section.row .col-full {
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -550,6 +559,7 @@ header nav ul li a.bordered {
   padding-top: 1em;
   padding-bottom: 3em;
 }
+
 #content section.row .col:last-child, #content section.row .col-full:last-child {
   margin-right: 0;
 }
@@ -651,4 +661,7 @@ header nav ul li a.bordered {
 /*# sourceMappingURL=main.css.map */
 b{
   color: #e85151;
+}
+
+.face_photo{
 }

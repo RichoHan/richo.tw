@@ -35,11 +35,21 @@
 	<div id="content">
 
 		<section class="intro">
-			<!-- <h1>Hello, <span class="nl"></span>we are here to help you.</h1> -->
 			<h1>Hello, this is Richo.</h1>
-			<p>
-				I'm currently working as Research Assistant in <a target="1" href="http://csclab.tw">CSCLab</a>. My research interests include Human Computer Interaction(HCI), Social Computing & Social Network Analysis.
-			</p>
+			<section class="row">
+				<div class="col">
+					<div class="photo-grid">
+						<a href="{{ url_for('static', filename='img/face.jpg') }}" rel="lightbox" class="col-1">
+							<img class="face_photo" src="{{ url_for('static', filename='img/face.jpg') }}">
+						</a>
+					</div>
+				</div>
+				<div class="col">
+					<p>
+						I'm currently working as Research Assistant in <a target="1" href="http://csclab.tw">CSCLab</a>. My research interests include Human Computer Interaction(HCI), Social Computing & Social Network Analysis.
+					</p>
+				</div>
+			</section>
 		</section>
 
 		<section class="row">
