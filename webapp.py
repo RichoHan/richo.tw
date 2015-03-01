@@ -1,5 +1,4 @@
-import json
-from flask import Flask, jsonify
+from flask import Flask
 from flask import render_template
 app = Flask(__name__)
 
@@ -9,17 +8,9 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/map')
-def map():
-    return render_template('map.html')
-
-
-@app.route('/geodata')
-def readGeoData():
-    json_data = open('static/map/data/test.geojson')
-    data = json.load(json_data)
-    json_data.close()
-    return jsonify(**data)
+@app.route('/home')
+def home():
+    return render_template('index.html')
 
 
 if __name__ == "__main__":
