@@ -2,7 +2,7 @@
 
 L.mapbox.accessToken = 'pk.eyJ1IjoicmljaG8yMTkyMDAwIiwiYSI6IlZvXzliM2sifQ.Y8PDWJ0c6a60BlQkir9BQQ';
 var t_json = {
-	"tiles": [ "https://api.tiles.mapbox.com/v4/mapbox.dark/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoicmljaG8yMTkyMDAwIiwiYSI6IlZvXzliM2sifQ.Y8PDWJ0c6a60BlQkir9BQQ" ],
+	"tiles": [ "https://api.tiles.mapbox.com/v4/richo2192000.eaad7add/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoicmljaG8yMTkyMDAwIiwiYSI6IlZvXzliM2sifQ.Y8PDWJ0c6a60BlQkir9BQQ" ],
 	"minzoom": 15,
 	"maxzoom": 15
 }
