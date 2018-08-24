@@ -17,10 +17,13 @@ services:
     volumes:
       - ./conf.d:/etc/nginx/conf.d
       - ./log:/var/log/nginx
+      - /etc/letsencrypt:/etc/letsencrypt
+      - /etc/ssl:/etc/ssl
     networks:
       - web_nw
     ports:
       - 80:80
+      - 443:443
     environment:
       - TZ=Asia/Taipei
     depends_on:
