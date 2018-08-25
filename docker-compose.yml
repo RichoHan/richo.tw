@@ -1,0 +1,34 @@
+version: "3"
+
+services:
+  richo.tw:
+    build: .
+    container_name: richo.tw
+    volumes:
+       - .:/home/richo.tw
+    command: uwsgi --ini app.ini
+    networks:
+      - web_nw
+    environment:
+      - TZ=Asia/Taipei
+  web_server:
+    image: nginx:latest
+    container_name: nginx
+    volumes:
+      - ./conf.d:/etc/nginx/conf.d
+      - ./log:/var/log/nginx
+      - /etc/letsencrypt:/etc/letsencrypt
+      - /etc/ssl:/etc/ssl
+    networks:
+      - web_nw
+    ports:
+      - 80:80
+      - 443:443
+    environment:
+      - TZ=Asia/Taipei
+    depends_on:
+      - richo.tw
+
+networks:
+  web_nw:
+    driver: bridge
