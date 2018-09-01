@@ -13,13 +13,12 @@ services:
       - TZ=Asia/Taipei
 
   ghost:
-    image: ghost:latest
-    container_name: ghost
+    image: ghost:2.3-alpine
     restart: always
     networks:
       - web_nw
     volumes:
-      - ./content:/var/lib/ghost/content
+      - ghost:/var/lib/ghost/content
       - ./ghost/config.production.json:/var/lib/ghost/config.production.json
     environment:
       - NODE_ENV=production
@@ -45,3 +44,6 @@ services:
 networks:
   web_nw:
     driver: bridge
+
+volumes:
+  ghost:
