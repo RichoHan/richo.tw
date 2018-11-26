@@ -21,8 +21,6 @@ services:
     restart: always
     networks:
       - web_nw
-    ports:
-      - 2368:2368
     volumes:
       - ./content:/var/lib/ghost/content
       - ./ghost/config.development.json:/var/lib/ghost/config.development.json

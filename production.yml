@@ -6,6 +6,7 @@ services:
     container_name: richo.tw
     volumes:
        - .:/home/richo.tw
+       - ./log:/var/log/uwsgi
     command: uwsgi --ini app.ini
     networks:
       - web_nw
