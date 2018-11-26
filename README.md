@@ -1,4 +1,4 @@
-# richo.tw
+# richo.tw [![Build Status](https://travis-ci.org/RichoHan/richo.tw.svg?branch=master)](https://travis-ci.org/RichoHan/richo.tw)
 > Buiding website customized for myself.
 
 ## To-Dos
