@@ -4,7 +4,8 @@
 ## To-Dos
 - [x] Dockerized Flask app with Nginx
 - [x] SSL certificate support
-- [ ] Ghost hosting
+- [x] Ghost hosting
+- [ ] Separate development and production mode
 - [ ] Redesign my own page
 
 ## Developer
