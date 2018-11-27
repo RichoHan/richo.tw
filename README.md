@@ -7,7 +7,7 @@
 - [x] Ghost hosting
 - [x] Separate development and production mode
 - [x] Redesign my profile page
-- [ ] Create my own ghost theme
+- [x] Modify my own ghost theme
 
 ## Developer
 |                      [**Richo Han**](https://richo.tw/)                     |
