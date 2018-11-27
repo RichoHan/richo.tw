@@ -6,7 +6,8 @@
 - [x] SSL certificate support
 - [x] Ghost hosting
 - [x] Separate development and production mode
-- [ ] Redesign my own page
+- [x] Redesign my profile page
+- [ ] Create my own ghost theme
 
 ## Developer
 |                      [**Richo Han**](https://richo.tw/)                     |
