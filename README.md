@@ -10,7 +10,7 @@
 - [x] Modify my own ghost theme
 
 ## Developer
-|                      [**Richo Han**](https://richo.tw/)                     |
-|:---------------------------------------------------------------------------:|
-| <img src="https://richo.tw/static/img/face.jpg" alt="drawing" width="200"/> |
-|          [https://github.com/RichoHan](https://github.com/RichoHan)         |
+|                      [**Richo Han**](https://richo.tw/)                      |
+|:----------------------------------------------------------------------------:|
+| <img src="https://richo.tw/static/img/richo.png" alt="drawing" width="200"/> |
+|          [https://github.com/RichoHan](https://github.com/RichoHan)          |
